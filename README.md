@@ -28,5 +28,5 @@ This project takes a **text prompt** or **uploaded image**, estimates its **dept
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/your-username/8th-sem-3d-project.git
-   cd 8th-sem-3d-project
+   git clone https://github.com/your-username/RenderGen.git
+   cd RenderGen

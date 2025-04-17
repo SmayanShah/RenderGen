@@ -1,0 +1,17 @@
+# Python cache and logs
+__pycache__/
+*.py[cod]
+*.log
+# Virtual environments
+venv*/
+env*/
+# IDE settings
+.vscode/
+.idea/
+# OS files
+.DS_Store
+Thumbs.db
+# Temporary folders
+Working/
+# Ignore embedded repo
+backend/pytorch3d/

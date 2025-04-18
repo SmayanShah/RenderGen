@@ -1,7 +1,7 @@
 import os
 from flask import Flask, request, jsonify, send_file, render_template
 from flask_cors import CORS
-from generate_3d import generate_3d
+from backend.generate_3d import generate_3d
 
 # ✅ Define models directory
 MODELS_DIR = r"C:\Users\shahs\8th Sem Project\backend\models"
@@ -46,4 +46,4 @@ def download_file(filename):
         return jsonify({"error": "File not found"}), 404
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=5000, debug=True)

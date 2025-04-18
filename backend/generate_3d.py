@@ -7,8 +7,8 @@ from diffusers import StableDiffusionPipeline
 from transformers import DPTForDepthEstimation, DPTImageProcessor
 from PIL import Image
 
-# ✅ Define models directory
-MODELS_DIR = r"C:\Users\shahs\8th Sem Project\backend\models"
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+MODELS_DIR = os.path.join(BASE_DIR, "models")
 os.makedirs(MODELS_DIR, exist_ok=True)
 
 def generate_3d(prompt, output_filename, input_image_path=None):

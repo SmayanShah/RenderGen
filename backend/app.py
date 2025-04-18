@@ -3,11 +3,11 @@ from flask import Flask, request, jsonify, send_file, render_template
 from flask_cors import CORS
 from backend.generate_3d import generate_3d
 
-# ✅ Define models directory
-MODELS_DIR = r"C:\Users\shahs\8th Sem Project\backend\models"
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+MODELS_DIR = os.path.join(BASE_DIR, "models")
 os.makedirs(MODELS_DIR, exist_ok=True)
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="templates", static_folder="static")
 CORS(app)
 
 @app.route("/")
